@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pin Atlas Support</title>
+<style>
+:root{--bg:#f3f6f1;--ink:#14261c;--mute:#4d6156;--line:#cfdacd;--pitch:#1f5c3a;--chalk:#fff;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1a14;--ink:#e8f0ea;--mute:#a3b5a9;--line:#27382e;--pitch:#6fcf97;--chalk:#16251c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 64px}
+h1{font:700 2.4rem/1.15 "Trebuchet MS",Verdana,sans-serif;margin:0 0 8px}
+.lead{color:var(--mute);margin:0 0 24px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+nav button{font:600 .9rem "Trebuchet MS",Verdana,sans-serif;padding:6px 14px;border:1.5px solid var(--pitch);border-radius:999px;background:none;color:var(--pitch);cursor:pointer}
+nav button[aria-pressed=true]{background:var(--pitch);color:var(--bg)}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--pitch);outline-offset:2px}
+.help{background:var(--chalk);border-left:6px solid var(--pitch);padding:16px 20px;margin-bottom:32px}
+.help h2{margin:0 0 6px;font:700 1.2rem "Trebuchet MS",Verdana,sans-serif}
+.help p{margin:0 0 6px}
+a{color:var(--pitch);font-weight:700}
+h2.faq{font:700 1.4rem "Trebuchet MS",Verdana,sans-serif;margin:0 0 8px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:14px 0;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--pitch);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin:0 0 16px;color:var(--mute)}
+footer{margin-top:32px;font-size:.85rem;color:var(--mute)}
+footer p{margin:4px 0}
+[hidden]{display:none}
+</style>
+</head>
+<body>
+<main>
+<h1>Pin Atlas</h1>
+<nav id="langs" aria-label="Language"></nav>
+
+<section lang="en" data-name="English">
+<p class="lead">Welcome to the support page for Pin Atlas, the ultimate football badge collection tracker.</p>
+<div class="help"><h2>Need Help?</h2><p>If you have questions, encountered a bug, or need assistance with your badge collection or Pro subscription, please reach out directly:</p><p>📧 Email: <a href="mailto:pincollectorapp@gmail.com">pincollectorapp@gmail.com</a></p></div>
+<h2 class="faq">Frequently Asked Questions</h2>
+<details><summary>How do I add a pin?</summary><p>Tap the + button in the Collection tab, then follow the three steps: add a photo, select the team, and set the pin status.</p></details>
+<details><summary>Can I remove the background from my pin photo?</summary><p>Yes — after taking or picking a photo, tap 'Remove background'. This uses on-device AI to isolate the pin. For best results, photograph pins against a contrasting surface.</p></details>
+<details><summary>How do I add a team that isn't in the list?</summary><p>In the team search step, type the team name and tap 'Create' when it appears at the bottom of the list.</p></details>
+<details><summary>What is the Wishlist for?</summary><p>The Wishlist lets you track teams whose pins you're looking for. You can export it as a CSV to share with other collectors.</p></details>
+<details><summary>Can I import my collection from a spreadsheet?</summary><p>Yes! Go to Settings &gt; Import Spreadsheet (.csv). Make sure your spreadsheet has standard headers such as 'Name', 'Team', 'Category', 'Status', and 'Value'.</p></details>
+<details><summary>Is my data backed up?</summary><p>Pin Atlas stores your data locally on your device. Use Export Collection in Settings to create a full backup including all photos.</p></details>
+<details><summary>How do I restore my Pro purchase?</summary><p>Go to Settings, tap the Paywall or Upgrade option, and tap "Restore Purchases".</p></details>
+<footer><p>Pin Atlas is an independent fan app and is not officially affiliated with any football club.</p></footer>
+</section>
+
+<section lang="de" data-name="Deutsch" hidden>
+<p class="lead">Willkommen auf der Support-Seite von Pin Atlas, dem ultimativen Tracker für Fußball-Anstecknadel-Sammlungen.</p>
+<div class="help"><h2>Hilfe benötigt?</h2><p>Wenn Sie Fragen haben, einen Fehler gefunden haben oder Unterstützung bei Ihrer Sammlung oder dem Pro-Abo benötigen, erreichen Sie uns hier:</p><p>📧 E-Mail: <a href="mailto:pincollectorapp@gmail.com">pincollectorapp@gmail.com</a></p></div>
+<h2 class="faq">Häufig gestellte Fragen (FAQ)</h2>
+<details><summary>Wie füge ich eine Anstecknadel hinzu?</summary><p>Tippen Sie im Reiter „Sammlung“ auf die Schaltfläche „+“ und folgen Sie den drei Schritten: Foto hinzufügen, Team auswählen und Pin-Status festlegen.</p></details>
+<details><summary>Kann ich den Hintergrund von meinem Nadel-Foto entfernen?</summary><p>Ja – tippen Sie nach der Aufnahme oder Auswahl eines Fotos auf „Hintergrund entfernen“. Dabei wird die Nadel mithilfe von On-Device-KI freigestellt. Für beste Ergebnisse fotografieren Sie Nadeln vor einem kontrastierenden Hintergrund.</p></details>
+<details><summary>Wie füge ich ein Team hinzu, das nicht in der Liste steht?</summary><p>Tippen Sie im Team-Suchschritt den Teamnamen ein und tippen Sie unten in der Liste auf „Erstellen“.</p></details>
+<details><summary>Wofür ist die Wunschliste da?</summary><p>Mit der Wunschliste können Sie Teams verfolgen, deren Nadeln Sie suchen. Sie können sie als CSV exportieren, um sie mit anderen Sammlern zu teilen.</p></details>
+<details><summary>Kann ich meine Sammlung aus einer Tabellenkalkulation importieren?</summary><p>Ja! Gehen Sie zu Einstellungen &gt; Tabellenkalkulation importieren (.csv). Stellen Sie sicher, dass Ihre Tabelle Standard-Überschriften wie „Name“, „Team“, „Kategorie“, „Status“ und „Wert“ enthält.</p></details>
+<details><summary>Werden meine Daten gesichert?</summary><p>Pin Atlas speichert Ihre Daten lokal auf Ihrem Gerät. Verwenden Sie „Sammlung exportieren“ in den Einstellungen, um ein vollständiges Backup einschließlich aller Fotos zu erstellen.</p></details>
+<details><summary>Wie stelle ich meinen Pro-Kauf wieder her?</summary><p>Gehen Sie zu den Einstellungen, tippen Sie auf die Paywall- oder Upgrade-Option und wählen Sie „Käufe wiederherstellen“.</p></details>
+<footer><p>Pin Atlas ist eine unabhängige Fan-App und steht in keiner offiziellen Verbindung zu Fußballvereinen.</p></footer>
+</section>
+
+<section lang="es" data-name="Español" hidden>
+<p class="lead">Bienvenido a la página de soporte de Pin Atlas, el rastreador definitivo de colecciones de pines de fútbol.</p>
+<div class="help"><h2>¿Necesitas ayuda?</h2><p>Si tienes preguntas, encuentras un error o necesitas asistencia con tu colección o suscripción Pro, comunícate directamente:</p><p>📧 Correo: <a href="mailto:pincollectorapp@gmail.com">pincollectorapp@gmail.com</a></p></div>
+<h2 class="faq">Preguntas Frecuentes</h2>
+<details><summary>¿Cómo agrego un pin?</summary><p>Toca el botón + en la pestaña Colección y luego sigue los tres pasos: agrega una foto, selecciona el equipo y establece el estado del pin.</p></details>
+<details><summary>¿Puedo eliminar el fondo de la foto de mi pin?</summary><p>Sí, después de tomar o seleccionar una foto, toca "Eliminar fondo". Esto utiliza IA en el dispositivo para aislar el pin. Para obtener mejores resultados, fotografía los pines contra una superficie contrastante.</p></details>
+<details><summary>¿Cómo agrego un equipo que no está en la lista?</summary><p>En el paso de búsqueda de equipo, escribe el nombre del equipo y toca "Crear" cuando aparezca al final de la lista.</p></details>
+<details><summary>¿Para qué sirve la lista de deseos?</summary><p>La lista de deseos te permite realizar un seguimiento de los equipos cuyos pines buscas. Puedes exportarla como CSV para compartirla con otros coleccionistas.</p></details>
+<details><summary>¿Puedo importar mi colección desde una hoja de cálculo?</summary><p>¡Sí! Ve a Configuración &gt; Importar hoja de cálculo (.csv). Asegúrate de que tu hoja de cálculo tenga encabezados estándar como 'Name', 'Team', 'Category', 'Status' y 'Value'.</p></details>
+<details><summary>¿Se respaldan mis datos?</summary><p>Pin Atlas almacena tus datos localmente en tu dispositivo. Utiliza Exportar colección en Configuración para crear una copia de seguridad completa que incluya todas las fotos.</p></details>
+<details><summary>¿Cómo restauro mi compra Pro?</summary><p>Ve a Configuración, toca la opción de Paywall o Actualización y toca "Restaurar compras".</p></details>
+<footer><p>Pin Atlas es una aplicación de aficionados independiente y no está afiliada oficialmente con ningún club de fútbol.</p></footer>
+</section>
+
+<section lang="pt" data-name="Português" hidden>
+<p class="lead">Bem-vindo à página de suporte do Pin Atlas, o gestor definitivo de coleções de pins de futebol.</p>
+<div class="help"><h2>Precisa de ajuda?</h2><p>Se tiver dúvidas, encontrar um erro ou precisar de assistência com a sua coleção ou subscrição Pro, contacte-nos diretamente:</p><p>📧 E-mail: <a href="mailto:pincollectorapp@gmail.com">pincollectorapp@gmail.com</a></p></div>
+<h2 class="faq">Perguntas Frequentes</h2>
+<details><summary>Como adiciono um pin?</summary><p>Toque no botão + no separador Coleção e siga os três passos: adicione uma foto, selecione a equipa e defina o estado do pin.</p></details>
+<details><summary>Posso remover o fundo da foto do meu pin?</summary><p>Sim — após tirar ou selecionar uma foto, toque em "Remover fundo". Isto utiliza IA no dispositivo para isolar o pin. Para melhores resultados, fotografe os pins contra uma superfície contrastante.</p></details>
+<details><summary>Como adiciono uma equipa que não está na lista?</summary><p>No passo de pesquisa de equipa, escreva o nome da equipa e toque em "Criar" quando aparecer no fundo da lista.</p></details>
+<details><summary>Para que serve a lista de desejos?</summary><p>A lista de desejos permite-lhe acompanhar equipas cujos pins procura. Pode exportá-la como CSV para partilhar com outros colecionadores.</p></details>
+<details><summary>Posso importar a minha coleção a partir de uma folha de cálculo?</summary><p>Sim! Vá a Definições &gt; Importar folha de cálculo (.csv). Certifique-se de que a sua folha de cálculo tem cabeçalhos padrão como 'Name', 'Team', 'Category', 'Status' e 'Value'.</p></details>
+<details><summary>Os meus dados estão salvaguardados?</summary><p>O Pin Atlas armazena os seus dados localmente no seu dispositivo. Utilize Exportar Coleção nas Definições para criar um backup completo, incluindo todas as fotos.</p></details>
+<details><summary>Como restauro a minha compra Pro?</summary><p>Vá a Definições, toque na opção de Paywall ou Atualização e toque em "Restaurar Compras".</p></details>
+<footer><p>O Pin Atlas é uma aplicação de adeptos independente e não está oficialmente afiliado a nenhum clube de futebol.</p></footer>
+</section>
+
+<section lang="uk" data-name="Українська" hidden>
+<p class="lead">Ласкаво просимо на сторінку підтримки Pin Atlas — найкращого додатку для відстеження колекції футбольних значків.</p>
+<div class="help"><h2>Потрібна допомога?</h2><p>Якщо у вас виникли запитання, помилки або потрібна допомога з колекцією чи підпискою Pro, будь ласка, звертайтеся напряму:</p><p>📧 Ел. пошта: <a href="mailto:pincollectorapp@gmail.com">pincollectorapp@gmail.com</a></p></div>
+<h2 class="faq">Часті запитання</h2>
+<details><summary>Як додати значок?</summary><p>Торкніться кнопки «+» на вкладці «Колекція», а потім виконайте три кроки: додайте фотографію, виберіть команду та встановіть статус значка.</p></details>
+<details><summary>Чи можу я видалити фон з фотографії значка?</summary><p>Так — після зйомки або вибору фотографії натисніть «Видалити фон». Це використовує штучний інтелект на пристрої для ізоляції значка. Для найкращих результатів фотографуйте значки на контрастному фоні.</p></details>
+<details><summary>Як додати команду, якої немає в списку?</summary><p>На етапі пошуку введіть назву команди та натисніть «Створити», коли вона з'явиться внизу списку.</p></details>
+<details><summary>Для чого потрібен список бажань?</summary><p>Список бажань дозволяє відстежувати команди, значки яких ви шукаєте. Ви можете експортувати його у форматі CSV, щоб поділитися з іншими колекціонерами.</p></details>
+<details><summary>Чи можу я імпортувати свою колекцію з таблиці?</summary><p>Так! Перейдіть у Налаштування &gt; Імпортувати таблицю (.csv). Переконайтеся, що ваша таблиця містить стандартні заголовки, такі як «Name», «Team», «Category», «Status» та «Value».</p></details>
+<details><summary>Чи створюється резервна копія моїх даних?</summary><p>Pin Atlas зберігає ваші дані локально на пристрої. Використовуйте «Експортувати колекцію» в налаштуваннях, щоб створити повну резервну копію, включаючи всі фотографії.</p></details>
+<details><summary>Як відновити мою покупку Pro?</summary><p>Перейдіть у «Налаштування», натисніть на екран оплати або оновлення, а потім виберіть «Відновити покупки».</p></details>
+<footer><p>Pin Atlas — це незалежний фанатський додаток, який не має офіційного зв'язку з жодним футбольним клубом.</p></footer>
+</section>
+
+<section lang="it" data-name="Italiano" hidden>
+<p class="lead">Benvenuto nella pagina di supporto di Pin Atlas, il tracker definitivo per collezioni di spille calcistiche.</p>
+<div class="help"><h2>Hai bisogno di aiuto?</h2><p>Se hai domande, riscontri un bug o hai bisogno di assistenza con la tua collezione o abbonamento Pro, contattaci direttamente:</p><p>📧 Email: <a href="mailto:pincollectorapp@gmail.com">pincollectorapp@gmail.com</a></p></div>
+<h2 class="faq">Domande Frequenti (FAQ)</h2>
+<details><summary>Come aggiungo una spilla?</summary><p>Tocca il pulsante + nella scheda Collezione, quindi segui i tre passi: aggiungi una foto, seleziona la squadra e imposta lo stato della spilla.</p></details>
+<details><summary>Posso rimuovere lo sfondo dalla foto della mia spilla?</summary><p>Sì: dopo aver scattato o scelto una foto, tocca "Rimuovi sfondo". Questa funzione utilizza l'IA sul dispositivo per isolare la spilla. Per risultati ottimali, fotografa le spille su una superficie a contrasto.</p></details>
+<details><summary>Come aggiungo una squadra che non è nell'elenco?</summary><p>Nella fase di ricerca della squadra, digita il nome della squadra e tocca "Crea" quando appare in fondo all'elenco.</p></details>
+<details><summary>A cosa serve la lista dei desideri?</summary><p>La lista dei desideri ti consente di tenere traccia delle squadre di cui cerchi le spille. Puoi esportarla come CSV da condividere con altri collezionisti.</p></details>
+<details><summary>Posso importare la mia collezione da un foglio di calcolo?</summary><p>Sì! Vai su Impostazioni &gt; Importa foglio di calcolo (.csv). Assicurati che il tuo foglio di calcolo abbia intestazioni standard come 'Name', 'Team', 'Category', 'Status' e 'Value'.</p></details>
+<details><summary>I miei dati sono salvati?</summary><p>Pin Atlas memorizza tutti i dati localmente sul tuo dispositivo. Usa Esporta collezione in Impostazioni per creare un backup completo che includa tutte le foto.</p></details>
+<details><summary>Come posso ripristinare il mio acquisto Pro?</summary><p>Vai su Impostazioni, tocca l'opzione Paywall o Aggiorna e tocca "Ripristina acquisti".</p></details>
+<footer><p>Pin Atlas è un'app indipendente creata dai tifosi e non è affiliata ufficialmente ad alcun club calcistico.</p></footer>
+</section>
+
+<section lang="ru" data-name="Русский" hidden>
+<p class="lead">Добро пожаловать на страницу поддержки приложения Pin Atlas — трекера коллекции футбольных значков.</p>
+<div class="help"><h2>Нужна помощь?</h2><p>Если у вас возникли вопросы, вы нашли ошибку или вам нужна помощь с коллекцией или подпиской Pro, пожалуйста, свяжитесь с нами:</p><p>📧 Email: <a href="mailto:pincollectorapp@gmail.com">pincollectorapp@gmail.com</a></p></div>
+<h2 class="faq">Часто задаваемые вопросы (FAQ)</h2>
+<details><summary>Как добавить значок?</summary><p>Нажмите кнопку «+» на вкладке «Коллекция», а затем выполните три шага: добавьте фото, выберите команду и установите статус значка.</p></details>
+<details><summary>Могу ли я удалить фон с фотографии значка?</summary><p>Да — после съемки или выбора фото нажмите «Удалить фон». Для этого используется локальный ИИ на устройстве. Для лучшего результата фотографируйте значки на контрастном фоне.</p></details>
+<details><summary>Как добавить команду, которой нет в списке?</summary><p>На этапе поиска команды введите её название и нажмите «Создать», когда оно появится в нижней части списка.</p></details>
+<details><summary>Для чего нужен список желаний?</summary><p>Список желаний позволяет отслеживать команды, чьи значки вы ищете. Вы можете экспортировать его в формате CSV, чтобы поделиться с другими коллекционерами.</p></details>
+<details><summary>Могу ли я импортировать свою коллекцию из таблицы?</summary><p>Да! Перейдите в «Настройки» &gt; «Импортировать таблицу (.csv)». Убедитесь, что в вашей таблице есть стандартные заголовки вроде «Name», «Team», «Category», «Status» и «Value».</p></details>
+<details><summary>Создается ли резервная копия моих данных?</summary><p>Pin Atlas хранит ваши данные локально на устройстве. Используйте функцию «Экспорт коллекции» в настройках, чтобы создать полную резервную копию, включая все фотографии.</p></details>
+<details><summary>Как восстановить мою покупку Pro?</summary><p>Перейдите в «Настройки», выберите раздел подписки или обновления и нажмите «Восстановить покупки».</p></details>
+<footer><p>Pin Atlas — это независимое фанатское приложение, которое не связано официально ни с одним футбольным клубом.</p></footer>
+</section>
+
+<footer><p>© 2026 Nikolai Kalinin. Pin Atlas. All rights reserved.</p></footer>
+</main>
+<script>
+(function(){
+var secs=[].slice.call(document.querySelectorAll("section[lang]")),nav=document.getElementById("langs");
+function show(l){
+secs.forEach(function(s){s.hidden=s.lang!==l});
+[].forEach.call(nav.children,function(b){b.setAttribute("aria-pressed",b.dataset.l===l)});
+document.documentElement.lang=l;
+try{localStorage.setItem("pa-lang",l)}catch(e){}
+}
+secs.forEach(function(s){
+var b=document.createElement("button");
+b.type="button";b.textContent=s.dataset.name;b.dataset.l=s.lang;
+b.addEventListener("click",function(){show(s.lang)});
+nav.appendChild(b);
+});
+var saved=null;try{saved=localStorage.getItem("pa-lang")}catch(e){}
+var nl=(navigator.language||"en").slice(0,2);
+var pick=saved||nl;
+if(!secs.some(function(s){return s.lang===pick}))pick="en";
+show(pick);
+})();
+</script>
+</body>
+</html>
