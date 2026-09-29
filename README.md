@@ -1,0 +1,2 @@
+# pinAtlasApp-support
+Pin Atlas
